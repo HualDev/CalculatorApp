@@ -44,14 +44,14 @@
 
 /* Backgrounds */
 --veryDarkViolet: hsl(268, 75%, 9%);
---veryDarkViolet: hsl(268, 71%, 12%); /*(toggle background, keypad background, screen background)*/
+--veryDarkViolet1: hsl(268, 71%, 12%); /*(toggle background, keypad background, screen background)*/
 
 /* Keys */
 --darkViolet: hsl(281, 89%, 26%); /*(key background)*/
 --vividMagenta: hsl(285, 91%, 52%); /*(key shadow)*/
 --pureCyan: hsl(176, 100%, 44%); /*(key background, toggle)*/
 --softCyan: hsl(177, 92%, 70%); /*(key shadow)*/
---veryDarkViolet: hsl(268, 47%, 21%); /*(key background)*/
+--veryDarkViolet2: hsl(268, 47%, 21%); /*(key background)*/
 --darkMagenta: hsl(290, 70%, 36%); /*(key shadow)*/
 
 /* Text */
@@ -123,12 +123,12 @@ p{
 
 .theme2{
     background-color: var(--orange);
-    visibility: none;
+    visibility: hidden;
 }
 
 .theme3{
     background-color: var(--pureCyan);
-    visibility: hidden;
+    visibility: none;
 }
 
 .result{
@@ -233,8 +233,42 @@ p{
     box-shadow: 0 4px 0 var(--veryDarkCyan);
 }
 
+.theme3Body{
+    background-color: var(--veryDarkViolet);
+}
 
+.theme3Header{
+    color: var(--lightYellow);
+}
 
+.theme3ChooseTheme{
+    background-color: var(--veryDarkViolet1);
+}
+
+.theme3Result{
+    background-color: var(--veryDarkViolet1);
+    color: var(--lightYellow);
+}
+
+.theme3Keyboard{
+    background-color: var(--veryDarkViolet1);
+}
+
+.theme3numbers{
+    color: var(--lightYellow);
+    background-color: var(--darkViolet);
+    box-shadow: 0 4px 0 var(--vividMagenta);
+}
+
+.theme3Equal{
+    background-color: var(--pureCyan);
+    box-shadow: 0 4px 0 var(--softCyan);
+}
+
+.theme3Del, .theme3Reset{
+    background-color: var(--veryDarkViolet2);
+    box-shadow: 0 4px 0 var(--darkMagenta);
+}
 
 
 
