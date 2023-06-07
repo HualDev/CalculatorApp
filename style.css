@@ -118,11 +118,12 @@ p{
 
 .theme1{
     background-color: var(--red);
+    visibility: hidden;
 }
 
 .theme2{
     background-color: var(--orange);
-    visibility: hidden;
+    visibility: none;
 }
 
 .theme3{
@@ -195,6 +196,42 @@ p{
     font-size: 1.1rem;
 }
 
+.theme2Body{
+    background-color: var(--lightGray);
+}
+
+.theme2Header{
+    color: var(--veryDarkGrayishYellow);
+}
+
+.theme2ChooseTheme{
+    background-color: var(--grayishRed);
+}
+
+.theme2Result{
+    background-color: var(--veryLightGray);
+    color: var(--veryDarkGrayishYellow);
+}
+
+.theme2Keyboard{
+    background-color: var(--grayishRed);
+}
+
+.theme2Numbers{
+    background-color: var(--lightGrayishYellow);
+    box-shadow: 0 4px 0 var(--darkGrayishOrange);
+    color: var(--veryDarkGrayishYellow);
+}
+
+.theme2Equal{
+    background-color: var(--orange);
+    box-shadow: 0 4px 0 var(--darkOrange);
+}
+
+.theme2Del, .theme2Reset{
+    background-color: var(--darkModerateCyan);
+    box-shadow: 0 4px 0 var(--veryDarkCyan);
+}
 
 
 
