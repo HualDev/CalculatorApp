@@ -10,7 +10,8 @@ const keyboard = document.getElementById('keyboard')
 const numbers = document.getElementsByClassName('numbers')
 const del = document.getElementById('del')
 const reset = document.getElementById('reset')
-const equal =document.getElementById('equal')
+const equal = document.getElementById('equal')
+let number = document.getElementsByClassName('number')
 
 
 theme1.addEventListener('click',()=>{
@@ -118,6 +119,29 @@ theme3.addEventListener('click',()=>{
     equal.classList.add('theme3Equal')
 })
 
+for(let i=0; i<number.length;i++){
+        number[i].addEventListener('click',()=>{
+            if(result.textContent==0){
+                result.textContent=''
+                result.textContent+=number[i].textContent
+            }
+            else{
+               result.textContent+=number[i].textContent 
+            }
+        
+    })
+}
 
+reset.addEventListener('click',()=>{
+    result.textContent=0
+})
 
-
+del.addEventListener('click',()=>{
+    if(result.textContent.length-1==0){
+        result.textContent=0
+    }
+    else{
+       result.textContent=result.textContent.substring(0, result.textContent.length-1) 
+    }
+    
+})

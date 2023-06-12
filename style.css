@@ -296,13 +296,13 @@ p{
     background-color: var(--veryDarkViolet1);
 }
 
-.theme3numbers{
+.theme3Numbers{
     color: var(--lightYellow);
     background-color: var(--veryDarkViolet2);
     box-shadow: 0 4px 0 var(--darkMagenta);   
 }
 
-.theme3numbers:hover{
+.theme3Numbers:hover{
     background-color: var(--darkViolet);
     opacity: 0.7;
 }
