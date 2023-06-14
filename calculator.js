@@ -12,6 +12,12 @@ const del = document.getElementById('del')
 const reset = document.getElementById('reset')
 const equal = document.getElementById('equal')
 let number = document.getElementsByClassName('number')
+const operator = document.getElementsByClassName('operator')
+const plus = document.getElementById('plus')
+const less = document.getElementById('less')
+let firstNumber = 0
+let secondNumber = 0
+let oper = ''
 
 
 theme1.addEventListener('click',()=>{
@@ -142,6 +148,32 @@ del.addEventListener('click',()=>{
     }
     else{
        result.textContent=result.textContent.substring(0, result.textContent.length-1) 
-    }
-    
+    }    
 })
+
+for(let i=0;i<operator.length;i++){    
+    operator[i].addEventListener('click',()=>{
+        firstNumber=parseFloat(result.textContent)
+        result.textContent=0  
+        oper = operator[i].textContent      
+    })
+}
+
+equal.addEventListener('click',()=>{
+    secondNumber=parseFloat(result.textContent)
+    if(oper=='+'){   
+        result.textContent=firstNumber+secondNumber
+    }else if(oper=='-'){
+        result.textContent=firstNumber-secondNumber            
+    }else if(oper=='*'){
+        result.textContent=firstNumber*secondNumber
+    }else if(oper=='/' && secondNumber!==0){        
+            result.textContent=firstNumber/secondNumber        
+    }
+})
+    
+
+
+
+
+
