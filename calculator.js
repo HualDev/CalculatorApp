@@ -126,14 +126,14 @@ theme3.addEventListener('click',()=>{
 })
 
 for(let i=0; i<number.length;i++){
-        number[i].addEventListener('click',()=>{
-            if(result.textContent==0){
-                result.textContent=''
-                result.textContent+=number[i].textContent
-            }
-            else{
-               result.textContent+=number[i].textContent 
-            }
+    number[i].addEventListener('click',()=>{
+        if(result.textContent==0){
+            result.textContent=''
+            result.textContent+=number[i].textContent
+        }
+        else{
+            result.textContent+=number[i].textContent 
+        }
         
     })
 }

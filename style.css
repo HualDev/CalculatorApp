@@ -318,17 +318,11 @@ p{
     box-shadow: 0 4px 0 var(--vividMagenta);
 }
 
-
-
-
-
-
-
     footer{
         font-size: 1rem;
         text-align: center;
         width: 90%;
-        margin: auto;
+        margin: 1rem auto;
     }
     footer a{
         color: hsl(228, 45%, 44%);
